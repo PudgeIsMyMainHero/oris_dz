@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
     <style>
         body{
             background-image: url(media/images/Site-background-light.png);
@@ -15,6 +16,13 @@
             background-attachment: fixed;
             background-position: bottom;
             background-color: #eee;
+        }
+        
+        @font-face{
+            font-family: "Satisfontory";
+            src: url("media/Satisfontory_v1.51.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
         }
         * {
             box-sizing: border-box;
@@ -261,10 +269,12 @@
             padding: 0 35px; 
             font-size: 23px;
             font-weight: bold;
-            color: #e2e9ef;
+            color: transparent;
             text-align: center;
             line-height: 1.6;
-            font-family: BebasNeue, sans-serif;
+            font-family: Satisfontory, sans-serif;
+            background: linear-gradient(#ADC8DD, #FEFFFE, #E2E9EF);
+            background-clip: text;
         }
         
         .main_content_text p{
@@ -503,7 +513,7 @@
             <div class="main_buttons">
                 <div class="main_buttons_left">
                     <ul>
-                        <li style="background-color: #e59344;">
+                        <li style="background-color: #e59344; height: 50px;">
                             <a style="color: #000;" href="https://satisfactory.wiki.gg/">
                                 <span>
                                     Main page
@@ -543,7 +553,7 @@
                             </a>
                         </li>
                         <li>
-                            <input style="height: 100%" class="main_buttons_right_search" type="text" placeholder="Search Satisfactory Wiki"> 
+                            <input style="height: 100%; width: 300px;" class="main_buttons_right_search" type="text" placeholder="Search Satisfactory Wiki"> 
                         </li> 
                     </ul>
                 </div>
@@ -920,7 +930,7 @@
                             </div>
                             <div style="display: flex; justify-content: center; height: 30px; gap: 5px;">
                                 <div>
-                                    <input style="background-color: #e0e0e0; border: 1px solid #aaaaaa; height: 100%;" type="text">
+                                    <input style="background-color: #e0e0e0; border: 1px solid #aaaaaa; height: 100%; width: 500px;" type="text">
                                 </div>
                                 <div style="background-color: #606060; align-content: center;">
                                     <span style="color: #faf5f5;">Create page</span>
