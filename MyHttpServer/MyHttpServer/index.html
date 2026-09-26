@@ -1,0 +1,154 @@
+﻿<html lang="en">
+<head>
+    <title>
+        Search-Engine
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 5vh;
+            padding-top: 20vh;
+        }
+
+        .temperaturebar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            top: 35px;
+            right: 35px;
+        }
+        .timebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.83vh;
+        }
+        .degrees {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: "Afacad", sans-serif;
+            color: #212121;
+        }
+        .city {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: "Afacad", sans-serif;
+            color: #6E6CDF;
+        }
+        .time {
+            font-size: 74px;
+            font-weight: 700;
+            font-family: "Afacad", sans-serif;
+            color: #212121;
+        }
+        .greeting {
+            font-size: 36px;
+            font-weight: 700;
+            font-family: "Afacad", sans-serif;
+            color: #6E6CDF;
+        }
+
+        .searchbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 621.45px;
+            width: 90%;
+            gap: 5vh;
+        }
+        .searchtext{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 65.1px;
+            padding: 18.55px 27.83px 18.55px 27.83px;
+            gap: 0.8vh;
+            background-color: #FAFAFA;
+            border: 1.16px solid #EEEEEE;
+            border-radius: 18.55px;
+        }
+        .icon {
+            width: clamp(48px, 3.76vw, 65px);
+            height: clamp(48px, 3.76vw, 65px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18.57px;
+            border: 1.16px solid #EEEEEE;
+            background-color: #FAFAFA;
+        }
+        .icons {
+            display: flex;
+            list-style: none;
+            gap: clamp(16px, 1.61vw, 27.83px);
+            padding: 0;
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="temperaturebar">
+    <h1 class="degrees">
+        36°
+    </h1>
+    <h2 class="city">
+        Ahmedabad
+    </h2>
+</header>
+
+<main>
+
+    <div class ="timebar">
+        <h1 class="time">
+            09:11:01
+        </h1>
+        <h2 class="greeting">
+            Good Morning, Saad.
+        </h2>
+    </div>
+
+    <div class="searchbar">
+        <div class="searchtext">
+            <img src="search-01.svg" alt="">
+            <h1 style="font-weight: 400; font-size: 20px; color: #9E9E9E; font-family: Poppins, sans-serif; ">Search</h1>
+        </div>
+
+        <ul class="icons">
+            <li class="icon"><a href="https://www.youtube.com"><img src="icons/youtube.svg" alt="YouTube"></a></li>
+            <li class="icon"><a href="https://chatgpt.com"><img src="icons/chatgpt.svg" alt="ChatGPT"></a></li>
+            <li class="icon"><a href="https://www.geeksforgeeks.org/"><img src="icons/geeksforgeeks.svg" alt="GeeksForGeeks"></a></li>
+            <li class="icon"><a href="https://www.deepseek.com/en/"><img src="icons/deepseek.svg" alt="DeepSeek"></a></li>
+            <li class="icon"><a href="https://github.com"><img src="icons/github.svg" alt="GitHub"></a></li>
+            <li class="icon"><a href="https://www.linkedin.com/"><img src="icons/linkedin.svg" alt="LinkedIn"></a></li>
+            <li class="icon"><img src="icons/plus-sign.svg" alt="+"></li>
+        </ul>
+    </div>
+
+</main>
+
+</body>
+</html>
